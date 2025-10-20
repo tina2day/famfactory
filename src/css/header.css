@@ -1,0 +1,39 @@
+.header {
+  position: relative;
+  min-height: 677px;
+  background-image: url("../images/header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(17, 0, 0, 0.5);
+  pointer-events: none;
+  z-index: 100;
+}
+.header__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  color: white;
+  z-index: 200;
+}
+.header__title {
+  font-family: "RF Dewi Expanded";
+  text-align: center;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 120%;
+  margin: 0 0 50px;
+}
+.header__title span {
+  display: block;
+}/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,46 @@
+.contacts {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto 133px;
+    font-size: 14px;
+    font-style: normal;
+
+    &__label {
+        font-family: 'Inter', 'RF Dewi', sans-serif;
+        font-weight: 400;
+        line-height: 150%;
+    }
+    
+    &__value {
+        font-family: 'RF Dewi Expanded', sans-serif;
+        font-weight: 800;
+        line-height: 120%;
+    }
+
+    &__item {
+        &_name {
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            .contacts__value {
+                font-size: 25px;
+            }
+
+            .contacts__label {
+                font-family: 'RF Dewi', sans-serif;
+                font-size: 16px;
+                text-transform: uppercase;
+            }
+            
+        }
+
+        span {
+            display: block;
+        }
+    }
+}
+
+

@@ -1,2 +1,5 @@
-@import "../normalize/normalize";
-@include normalize();
+@import "../normalize/normalize/import-now";
+@import "../blocks/fonts";
+@import "../blocks/header";
+@import "../blocks/contacts";
+@import "../blocks/clothes-order";
