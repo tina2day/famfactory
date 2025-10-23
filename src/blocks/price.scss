@@ -1,0 +1,29 @@
+.price {
+    width: 60%;
+    text-align: center;
+    font-style: normal;
+    margin: 120px auto 0;
+
+    &__title {
+        font-family: 'RF Dewi Expanded';
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 110%;
+        color: #191919;
+        span {
+            display: block;
+        }
+    }
+
+    &__description {
+        width: 64%;
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        margin: 75px auto 96px;
+        color: #1A1A1A;
+    }
+}
+
+

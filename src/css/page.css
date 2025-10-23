@@ -424,4 +424,63 @@ template {
   border-radius: 10px;
   background: #F4DF74;
   border-color: #F4DF74;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(251px, 1fr));
+  -moz-column-gap: 35px;
+       column-gap: 35px;
+  row-gap: 38px;
+  color: #000000;
+}
+.cards__image {
+  max-height: 348px;
+  max-width: 352px;
+  aspect-ratio: 1/1;
+  width: 100%;
+  border-radius: 4px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cards__text {
+  font-family: "RF Dewi";
+  font-size: 24px;
+  line-height: 120%;
+  text-align: left;
+  margin: 21px 0px 0px;
+}
+.cards__price {
+  position: relative;
+  top: -17px;
+  left: 15px;
+  font-family: "RF Dewi";
+  font-size: 18px;
+  line-height: 120%;
+}
+
+.price {
+  width: 60%;
+  text-align: center;
+  font-style: normal;
+  margin: 120px auto 0;
+}
+.price__title {
+  font-family: "RF Dewi Expanded";
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 110%;
+  color: #191919;
+}
+.price__title span {
+  display: block;
+}
+.price__description {
+  width: 64%;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  margin: 75px auto 96px;
+  color: #1A1A1A;
 }/*# sourceMappingURL=page.css.map */

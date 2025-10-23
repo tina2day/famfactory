@@ -1,0 +1,32 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(251px, 1fr));
+  -moz-column-gap: 35px;
+       column-gap: 35px;
+  row-gap: 38px;
+  color: #000000;
+}
+.cards__image {
+  max-height: 348px;
+  max-width: 352px;
+  aspect-ratio: 1/1;
+  width: 100%;
+  border-radius: 4px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cards__text {
+  font-family: "RF Dewi";
+  font-size: 24px;
+  line-height: 120%;
+  text-align: left;
+  margin: 21px 0px 0px;
+}
+.cards__price {
+  position: relative;
+  top: -17px;
+  left: 15px;
+  font-family: "RF Dewi";
+  font-size: 18px;
+  line-height: 120%;
+}/*# sourceMappingURL=cards.css.map */
