@@ -1,0 +1,10 @@
+.decoration {
+    width: 1125px;
+    margin: 120px auto 120px;
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        &__image {
+            max-height: 316px;
+        }
+    }
+}

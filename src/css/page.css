@@ -460,27 +460,375 @@ template {
 }
 
 .price {
-  width: 60%;
-  text-align: center;
-  font-style: normal;
+  width: 1125px;
   margin: 120px auto 0;
 }
-.price__title {
+
+.presentation {
+  margin-top: 100px;
+}
+.presentation_theme_light {
+  background-image: linear-gradient(#FFFFFF 0% 50%, #EEEEEE 50%);
+}
+.presentation_theme_dark {
+  background-image: linear-gradient(#FFFFFF 0% 50%, #191919 50%);
+}
+.presentation__art {
+  width: 1125px;
+  height: 350px;
+  margin: 0 auto 0;
+  border-radius: 15px;
+  position: relative;
+}
+.presentation__art_theme_light {
+  background-image: url("../images/presentation_theme_light.jpg");
+  background-size: 150% auto;
+  background-position: 45% 45%;
+}
+.presentation__art_theme_light::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(17, 0, 0, 0.4);
+  pointer-events: none;
+  border-radius: 15px;
+  z-index: 100;
+}
+.presentation__art_theme_dark {
+  background-image: url("../images/tshirrt.jpg"), url("../images/mask.jpg");
+  background-size: 50.2% auto, 50.2% auto;
+  background-position: left center, right center;
+  background-repeat: no-repeat;
+}
+.presentation__art_theme_dark::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(17, 0, 0, 0.65);
+  border-radius: 15px;
+  pointer-events: none;
+  z-index: 100;
+}
+.presentation__title {
+  font-family: "RF Dewi Expanded";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  position: relative;
+  color: #FFFFFF;
+  z-index: 200;
+}
+.presentation__title span {
+  display: block;
+}
+.presentation__title_theme_light {
+  top: 80px;
+}
+.presentation__title_theme_dark {
+  top: 95px;
+}
+.presentation__ellipse {
+  position: relative;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("../images/vector.svg");
+  background-position: 56% center;
+  background-repeat: no-repeat;
+  z-index: 200;
+}
+.presentation__text {
+  width: 63%;
+  margin: 0 auto 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #FFFFFF;
+  position: relative;
+  top: 30%;
+  z-index: 200;
+}
+
+.section-header {
+  width: 100%;
+  text-align: center;
+  font-style: normal;
+  color: #191919;
+}
+.section-header__title {
+  margin-top: 0;
   font-family: "RF Dewi Expanded";
   font-weight: 800;
   font-size: 48px;
   line-height: 110%;
-  color: #191919;
 }
-.price__title span {
+.section-header__title span {
   display: block;
 }
-.price__description {
+.section-header__description {
   width: 64%;
   font-family: "Inter";
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   margin: 75px auto 96px;
+}
+
+.cooperation {
+  background-color: #EEEEEE;
+}
+.cooperation__content {
+  margin: 0 auto 0;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  width: 1125px;
+}
+.cooperation .gallery {
+  grid-template-columns: repeat(3, 1fr);
+}
+.cooperation .gallery__image {
+  max-height: 211px;
+}
+
+.gallery {
+  display: grid;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.gallery__image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+}
+.gallery__title {
+  font-family: "RF Dewi Expanded";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 120%;
+  text-align: center;
+  color: #191919;
+}
+.gallery__title span {
+  display: block;
+}
+.gallery__text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #191919;
+}
+
+.decoration {
+  width: 1125px;
+  margin: 120px auto 120px;
+}
+.decoration .gallery {
+  grid-template-columns: repeat(2, 1fr);
+}
+.decoration .gallery__image {
+  max-height: 316px;
+}
+
+.work {
+  background-color: #191919;
+  border-color: #191919;
+  margin-top: -5px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.work__content {
+  width: 690px;
+  margin: 0 auto 0;
+  color: #FFFFFF;
+}
+.work__title {
+  font-family: "RF Dewi Expanded";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 110%;
+  text-align: center;
+  margin-top: 0;
+}
+.work__description {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.work__items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+}
+.work__icon {
+  position: relative;
+  width: 114px;
+  height: 114px;
+  margin: 0 auto 0;
+  background-image: url("../images/round.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.work__icon_step_request::after {
+  content: "";
+  display: block;
+  width: 46.5px;
+  height: 42.7px;
+  background-image: url("../images/request.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.work__icon_step_design::after {
+  content: "";
+  display: block;
+  width: 49px;
+  height: 48px;
+  background-image: url("../images/design.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.work__icon_step_decoration::after {
+  content: "";
+  display: block;
+  width: 40.5px;
+  height: 37.25px;
+  background-image: url("../images/decor.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.work__icon_step_delivery::after {
+  content: "";
+  display: block;
+  width: 46px;
+  height: 32px;
+  background-image: url("../images/delivery.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.work__text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+}
+
+.manufacturing {
+  width: 1125px;
+  margin: 0 auto 0;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.shop {
+  background: linear-gradient(#FFFFFF 25%, #191919 25%);
+}
+.shop__content {
+  width: 1125px;
+  background: #E6E6E6;
+  border-radius: 15px;
+  margin: 0 auto 0;
+  padding-top: 83px;
+}
+.shop__title {
+  font-family: "RF Dewi Expanded";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 110%;
+  text-align: center;
   color: #1A1A1A;
+  margin: 0 auto 35px;
+}
+.shop__title span {
+  display: block;
+}
+.shop__description {
+  width: 55%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 120%;
+  text-align: center;
+  color: #1A1A1A;
+  margin: 0 auto 60px;
+}
+.shop__location {
+  display: flex;
+}
+.shop__location-item {
+  width: 50%;
+  height: 472px;
+  position: relative;
+}
+.shop__location-item_spb .shop__photo {
+  width: 100%;
+  height: 472px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-bottom-left-radius: 15px;
+}
+.shop__location-item_msk .shop__photo {
+  width: 100%;
+  height: 472px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-bottom-right-radius: 15px;
+}
+.shop__location-title {
+  font-family: "RF Dewi Expanded";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 120%;
+  color: #FFFFFF;
+  margin: 0;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+.shop__location-title span {
+  display: block;
 }/*# sourceMappingURL=page.css.map */

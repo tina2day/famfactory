@@ -1,0 +1,32 @@
+.gallery {
+  display: grid;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.gallery__image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+}
+.gallery__title {
+  font-family: "RF Dewi Expanded";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 120%;
+  text-align: center;
+  color: #191919;
+}
+.gallery__title span {
+  display: block;
+}
+.gallery__text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #191919;
+}/*# sourceMappingURL=gallery.css.map */

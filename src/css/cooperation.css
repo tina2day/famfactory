@@ -1,0 +1,15 @@
+.cooperation {
+  background-color: #EEEEEE;
+}
+.cooperation__content {
+  margin: 0 auto 0;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  width: 1125px;
+}
+.cooperation .gallery {
+  grid-template-columns: repeat(3, 1fr);
+}
+.cooperation .gallery__image {
+  max-height: 211px;
+}/*# sourceMappingURL=cooperation.css.map */

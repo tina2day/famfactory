@@ -1,0 +1,10 @@
+.decoration {
+  width: 1125px;
+  margin: 120px auto 120px;
+}
+.decoration .gallery {
+  grid-template-columns: repeat(2, 1fr);
+}
+.decoration .gallery__image {
+  max-height: 316px;
+}/*# sourceMappingURL=decoration.css.map */
