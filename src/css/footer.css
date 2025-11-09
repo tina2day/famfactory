@@ -1,0 +1,25 @@
+.footer {
+  position: relative;
+  background-color: #191919;
+  padding-top: 60px;
+}
+.footer__content {
+  position: relative;
+  width: 1125px;
+  margin: 0 auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  row-gap: 48px;
+  color: white;
+}
+.footer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1125px;
+  border-top: 1px solid #2C2C2C;
+  transform: translateX(-50%);
+}/*# sourceMappingURL=footer.css.map */

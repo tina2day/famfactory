@@ -7,27 +7,32 @@
         <title>Швейная фабрика "Famfactory"</title>
     </head>
     <body class="page">
-        <header class="header">
+        <header class="header" role="banner">
             <div class="header__content">
-                <div class="contacts">
-                    <div class="contacts__item contacts__item_phone">
-                        <span class="contacts__value">+7 925 343 16 96</span>
-                        <span class="contacts__label">Перезвоните мне</span>
-                    </div>
-                    <div class="contacts__item contacts__item_name">
+                <ul class="contacts">
+                    <li class="contacts__item contacts__item_phone">
+                        <a href="tel:+79253431696" class="contacts__link">
+                            <span class="contacts__value">+7 925 343 16 96</span>
+                            <span class="contacts__label">Перезвоните мне</span>
+                        </a>
+                    </li>
+                    <li class="contacts__item contacts__item_name">
                         <span class="contacts__value">FAMFACTORY</span>
                         <span class="contacts__label">Швейная фабрика</span>
-                    </div>
-                    <div class="contacts__item contacts__item_email">
-                        <span class="contacts__value">MAIL@FAMFACTORY.RU</span>
-                        <span class="contacts__label">Наша почта</span>
-                    </div>
-                </div>
+                    </li>
+                    <li class="contacts__item contacts__item_email">
+                        <a href="emailto:mail@famfactory.ru" class="contacts__link">
+                            <span class="contacts__value">MAIL@FAMFACTORY.RU</span>
+                            <span class="contacts__label">Наша почта</span>
+                        </a>
+                    </li>
+                </ul>
                 <h1 class="header__title">
                     <span>Сделано</span> 
                     <span>в Санкт-Петербурге</span>
                 </h1>
-                <input class="clothes-order" type="button" value="Отправить запрос">
+                <button class="clothes-order" type="button" aria-label="Отправить запрос на пошив одежды">
+                    Отправить запрос</button>
             </div>
         </header>
         <main class="main">
@@ -220,5 +225,29 @@
                 </div>
             </section>
         </main>
+        <footer class="footer">
+            <div class="footer__content">
+                <ul class="contacts">
+                    <li class="contacts__item contacts__item_phone">
+                        <a href="tel:+79253431696" class="contacts__link">
+                            <span class="contacts__value">+7 925 343 16 96</span>
+                            <span class="contacts__label">Перезвоните мне</span>
+                        </a>
+                    </li>
+                    <li class="contacts__item contacts__item_name">
+                        <span class="contacts__value">FAMFACTORY</span>
+                        <span class="contacts__label">Швейная фабрика</span>
+                    </li>
+                    <li class="contacts__item contacts__item_email">
+                        <a href="emailto:mail@famfactory.ru" class="contacts__link">
+                            <span class="contacts__value">MAIL@FAMFACTORY.RU</span>
+                            <span class="contacts__label">Наша почта</span>
+                        </a>
+                    </li>
+                </ul>
+                <button class="clothes-order" type="button" aria-label="Отправить запрос на пошив одежды">
+                Отправить запрос</button>
+            </div>
+        </footer>
     </body>
 </html>

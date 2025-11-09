@@ -1,10 +1,17 @@
 .contacts {
-    width: 60%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    margin: 30px auto 133px;
     font-size: 14px;
     font-style: normal;
+    list-style: none;
+    margin: 0;
+
+    &__link {
+        color: inherit;
+        font: inherit;
+        text-decoration: none;
+    }
 
     &__label {
         font-family: 'Inter', 'RF Dewi', sans-serif;
@@ -21,7 +28,7 @@
     &__item {
         &_name {
             position: absolute;
-            top: 30px;
+            top: 0;
             left: 50%;
             transform: translateX(-50%);
 
