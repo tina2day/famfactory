@@ -24,3 +24,16 @@
         margin: 75px auto 96px;
     }
 }
+
+@media (min-width: 550px) and (max-width: 1028px) {
+    .section-header {
+        &__title {
+            font-size: 5.83vw;
+        }
+
+        &__description {
+            width: 100%;
+            margin-bottom: 76px;
+        }
+    }
+}

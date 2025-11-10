@@ -13,8 +13,7 @@
         row-gap: 48px;
         color: white;
     }
-    &::after {
-        content: "";
+    &__decoration {
         position: absolute;
         top: 0;
         left: 50%;
@@ -23,3 +22,28 @@
         transform: translateX(-50%);
     }
 } 
+
+@media (min-width: 550px) and (max-width: 1028px) {
+    .footer {
+        &__content {
+            width: 90%;
+            row-gap: 39px;
+            padding-bottom: 120px;
+            align-items: flex-start;
+        }
+        &__decoration {
+            width: 90%;
+        }
+    } 
+}
+
+@media (min-width: 1028px) and (max-width: 1205px) {
+    .footer {
+        &__content {
+            width: 93%;
+        }
+        &__decoration {
+            width: 93%;
+        }
+    }
+}

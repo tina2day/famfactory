@@ -12,4 +12,25 @@
 }
 .cooperation .gallery__image {
   max-height: 211px;
+}
+
+@media (min-width: 550px) and (max-width: 1028px) {
+  .cooperation__content {
+    width: 90%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .cooperation .gallery {
+    grid-template-columns: repeat(1, 58.5vw);
+    justify-content: center;
+  }
+}
+@media (min-width: 1028px) and (max-width: 1205px) {
+  .cooperation__content {
+    width: 93%;
+  }
+  .cooperation .gallery {
+    grid-template-columns: repeat(1, 58.5vw);
+    justify-content: center;
+  }
 }/*# sourceMappingURL=cooperation.css.map */

@@ -3,4 +3,16 @@
     margin: 120px auto 0;
 }
 
+@media (min-width: 550px) and (max-width: 1028px) {
+    .price {
+        width: 90%;
+        margin-top: 80px;
+    }
+}
 
+@media (min-width: 1028px) and (max-width: 1205px) {
+    .price {
+        width: 93%;
+        margin-top: 90px;
+    } 
+}

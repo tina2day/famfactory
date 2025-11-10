@@ -105,4 +105,25 @@
   font-size: 16px;
   line-height: 150%;
   text-align: center;
+}
+
+@media (min-width: 550px) and (max-width: 770px) {
+  .work {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .work__content {
+    width: 83%;
+  }
+  .work__items {
+    grid-template-columns: repeat(2, 1fr);
+    -moz-column-gap: 90px;
+         column-gap: 90px;
+  }
+}
+@media (min-width: 770px) and (max-width: 1028px) {
+  .work {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }/*# sourceMappingURL=work.css.map */

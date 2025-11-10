@@ -7,4 +7,27 @@
 }
 .decoration .gallery__image {
   max-height: 316px;
+}
+
+@media (min-width: 550px) and (max-width: 1028px) {
+  .decoration {
+    width: 90%;
+    margin: 80px auto 80px;
+  }
+  .decoration .gallery {
+    grid-template-columns: repeat(1, 65.8vw);
+    justify-content: center;
+  }
+  .decoration .gallery__image {
+    height: 229px;
+  }
+}
+@media (min-width: 1028px) and (max-width: 1205px) {
+  .decoration {
+    width: 93%;
+  }
+  .decoration .gallery {
+    grid-template-columns: repeat(1, 65.8vw);
+    justify-content: center;
+  }
 }/*# sourceMappingURL=decoration.css.map */

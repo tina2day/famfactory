@@ -1,5 +1,5 @@
 .shop {
-  background: linear-gradient(#FFFFFF 25%, #191919 25%);
+  background: linear-gradient(#FFFFFF 22%, #191919 22%);
   padding-bottom: 80px;
   margin-bottom: -10px;
 }
@@ -70,4 +70,35 @@
 }
 .shop__location-title span {
   display: block;
+}
+
+@media (min-width: 550px) and (max-width: 1028px) {
+  .shop {
+    background: linear-gradient(#FFFFFF 13%, #191919 13%);
+  }
+  .shop__content {
+    width: 90%;
+    padding-top: 63px;
+  }
+  .shop__title {
+    font-size: 42px;
+  }
+  .shop__location {
+    display: block;
+  }
+  .shop__location-item {
+    width: 100%;
+  }
+  .shop__location-item_spb .shop__photo {
+    border-radius: 0;
+  }
+  .shop__location-item_msk .shop__photo {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+}
+@media (min-width: 1028px) and (max-width: 1205px) {
+  .shop__content {
+    width: 93%;
+  }
 }/*# sourceMappingURL=shop.css.map */

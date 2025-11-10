@@ -14,12 +14,31 @@
   row-gap: 48px;
   color: white;
 }
-.footer::after {
-  content: "";
+.footer__decoration {
   position: absolute;
   top: 0;
   left: 50%;
   width: 1125px;
   border-top: 1px solid #2C2C2C;
   transform: translateX(-50%);
+}
+
+@media (min-width: 550px) and (max-width: 1028px) {
+  .footer__content {
+    width: 90%;
+    row-gap: 39px;
+    padding-bottom: 120px;
+    align-items: flex-start;
+  }
+  .footer__decoration {
+    width: 90%;
+  }
+}
+@media (min-width: 1028px) and (max-width: 1205px) {
+  .footer__content {
+    width: 93%;
+  }
+  .footer__decoration {
+    width: 93%;
+  }
 }/*# sourceMappingURL=footer.css.map */

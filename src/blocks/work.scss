@@ -107,3 +107,23 @@
     }
 }
 
+@media (min-width: 550px) and (max-width: 770px) {
+    .work {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        &__content {
+            width: 83%;
+        }
+        &__items {
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 90px;
+        }
+    }
+}
+
+@media (min-width: 770px) and (max-width: 1028px) {
+    .work {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}

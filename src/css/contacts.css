@@ -5,6 +5,7 @@
   font-size: 14px;
   font-style: normal;
   list-style: none;
+  padding-inline-start: 0;
   margin: 0;
 }
 .contacts__link {
@@ -30,6 +31,7 @@
 }
 .contacts__item_name .contacts__value {
   font-size: 25px;
+  line-height: 21px;
 }
 .contacts__item_name .contacts__label {
   font-family: "RF Dewi", sans-serif;
@@ -38,4 +40,65 @@
 }
 .contacts__item span {
   display: block;
+}
+
+@media (min-width: 550px) and (max-width: 680px) {
+  .contacts_place_header {
+    margin-top: 194px;
+    order: 1000;
+  }
+  .contacts_place_footer {
+    order: 1000;
+    flex-direction: column;
+    row-gap: 39px;
+  }
+  .contacts_place_footer .contacts__item_name {
+    left: 0;
+    transform: translateX(0);
+  }
+}
+@media (min-width: 680px) and (max-width: 800px) {
+  .contacts_place_header {
+    margin-top: 184px;
+    order: 1000;
+  }
+  .contacts_place_footer {
+    order: 1000;
+    flex-direction: column;
+    row-gap: 39px;
+  }
+  .contacts_place_footer .contacts__item_name {
+    left: 0;
+    transform: translateX(0);
+  }
+}
+@media (min-width: 800px) and (max-width: 920px) {
+  .contacts_place_header {
+    margin-top: 164px;
+    order: 1000;
+  }
+  .contacts_place_footer {
+    order: 1000;
+    flex-direction: column;
+    row-gap: 39px;
+  }
+  .contacts_place_footer .contacts__item_name {
+    left: 0;
+    transform: translateX(0);
+  }
+}
+@media (min-width: 920px) and (max-width: 1028px) {
+  .contacts_place_header {
+    margin-top: 154px;
+    order: 1000;
+  }
+  .contacts_place_footer {
+    order: 1000;
+    flex-direction: column;
+    row-gap: 39px;
+  }
+  .contacts_place_footer .contacts__item_name {
+    left: 0;
+    transform: translateX(0);
+  }
 }/*# sourceMappingURL=contacts.css.map */

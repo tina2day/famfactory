@@ -16,3 +16,28 @@
     }
 }
 
+@media (min-width: 550px) and (max-width: 1028px) {
+    .cooperation {
+       &__content {
+        width: 90%;
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
+      .gallery {
+        grid-template-columns: repeat(1, 58.5vw);
+        justify-content: center;
+      }
+    }
+}
+
+@media (min-width: 1028px) and (max-width: 1205px) {
+    .cooperation {
+       &__content {
+        width: 93%;
+      }
+      .gallery {
+        grid-template-columns: repeat(1, 58.5vw);
+        justify-content: center;
+      }
+    }
+}

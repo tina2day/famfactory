@@ -21,4 +21,14 @@
   font-size: 16px;
   line-height: 150%;
   margin: 75px auto 96px;
+}
+
+@media (min-width: 550px) and (max-width: 1028px) {
+  .section-header__title {
+    font-size: 5.83vw;
+  }
+  .section-header__description {
+    width: 100%;
+    margin-bottom: 76px;
+  }
 }/*# sourceMappingURL=section-header.css.map */

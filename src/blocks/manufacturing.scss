@@ -4,3 +4,27 @@
     padding-top: 120px;
     padding-bottom: 120px;
 }
+
+@media (min-width: 550px) and (max-width: 1028px) {
+    .manufacturing {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        width: 90%;
+        .section-header {
+            &__description {
+                margin: 69px auto 72px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1028px) and (max-width: 1205px) {
+    .manufacturing {
+        width: 93%;
+        .section-header {
+            &__description {
+                margin: 69px auto 72px;
+            }
+        }
+    } 
+}
